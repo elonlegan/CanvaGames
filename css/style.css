@@ -1,3 +1,72 @@
-body {
-  background-color: aqua;
+/*--------------------- VARIABLES --------*/
+:root {
+  --fondo-oscuro: #232533;
+  --fondo-claro: #f5f7fb;
+
+  --color-primario: #505ef4;
+  --color-primario-oscuro: #3041f8;
+  --color-secundario: #b1b2c9;
+  --color-secundario-oscuro: #888ab7;
+  --color-blanco: #ffffff;
+
+  --fuente-primaria: "Lato", sans-serif;
 }
+/*--------------------- VARIABLES --------*/
+
+/*--------------------- GLOBAL START --------*/
+body {
+  font-family: var(--fuente-primaria);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-blanco);
+}
+/*--------------------- GLOBAL START --------*/
+
+/*--------------------- HEADER START --------*/
+header {
+  background-color: var(--color-primario);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 53px;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo-text {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-blanco);
+}
+
+header nav {
+  height: inherit;
+}
+
+header nav ul {
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li {
+  margin-left: 30px;
+  font-size: 16px;
+}
+/*--------------------- HEADER END --------*/
