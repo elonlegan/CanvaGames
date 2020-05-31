@@ -77,7 +77,7 @@ header nav ul li {
 }
 /*--------------------- HEADER END --------*/
 
-/*--------------------- PRINCIPAL SECTION --------*/
+/*--------------------- MAIN SECTION --------*/
 
 .main {
   background-color: var(--fondo-claro);
@@ -92,20 +92,86 @@ header nav ul li {
 }
 
 .badges {
-  width: 72vw;
   display: flex;
   justify-content: space-between;
   margin: 15px auto;
+}
+/*----------------------------------------------- BTN BADGE --------*/
+.contain-btn-badge {
+  width: 100px;
+  height: 95px;
+  border: 10px solid #f6e01c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: ;
+  background-color: #000000;
+  box-sizing: border-box;
+  box-shadow: 0 5px 0 #c9b818;
   cursor: pointer;
+  z-index: 2;
 }
 
-.badge {
+.contain-btn-badge:hover {
+  transform: scale(1.2);
 }
 
-.badge:hover {
-  transform: scale(1.25);
+.contain-btn-badge:active {
+  transform: scale(1);
 }
+
+.btn-badge {
+  flex: 1;
+  border-radius: 50%;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#frogger {
+  background-color: #1f3311;
+  border: 10px solid #7bca40;
+  box-shadow: 0 5px 0 #6baf30;
+}
+#galaga {
+  background-color: #5c0048;
+  border: 10px solid #a07099;
+  box-shadow: 0 5px 0 #835c7e;
+}
+#arkanoid {
+  background-color: #a41717;
+  border: 10px solid #e42020;
+  box-shadow: 0 5px 0 #b81e1e;
+}
+#kong {
+  background-color: #ffb850;
+  border: 10px solid #c54e00;
+  box-shadow: 0 5px 0 #941c00;
+}
+#pacman {
+  background-color: #edd94f;
+  border: 10px solid #472c09;
+  box-shadow: 0 5px 0 #271805;
+}
+#centipede {
+  background-color: #433b70;
+  border: 10px solid #ff6666;
+  box-shadow: 0 5px 0 #cd3434;
+}
+#space {
+  background-color: #0361ff;
+  border: 10px solid #6ba9ff;
+  box-shadow: 0 5px 0 #5a8fd9;
+}
+#tetris {
+  background-color: #29b8e8;
+  border: 10px solid #004d96;
+  box-shadow: 0 5px 0 #003970;
+}
+/*----------------------------------------------- BTN BADGE --------*/
 
 canvas {
   border: 1px solid red;
 }
+/*--------------------- MAIN SECTION --------*/
