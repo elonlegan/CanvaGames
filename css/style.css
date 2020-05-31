@@ -70,3 +70,35 @@ header nav ul li {
   font-size: 16px;
 }
 /*--------------------- HEADER END --------*/
+
+/*--------------------- PRINCIPAL SECTION --------*/
+
+.principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 53px);
+}
+
+.container-principal {
+  margin: 10px;
+}
+
+.badges {
+  width: 72vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px auto;
+  cursor: pointer;
+}
+
+.badge {
+}
+
+.badge:hover {
+  transform: scale(1.25);
+}
+
+canvas {
+  border: 1px solid red;
+}
