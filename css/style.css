@@ -100,7 +100,7 @@ header nav ul li {
 .contain-btn-badge {
   width: 100px;
   height: 95px;
-  border: 10px solid #f6e01c;
+  border: 8px solid #f6e01c;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -131,42 +131,42 @@ header nav ul li {
 
 #frogger {
   background-color: #1f3311;
-  border: 10px solid #7bca40;
+  border: 8px solid #7bca40;
   box-shadow: 0 5px 0 #6baf30;
 }
 #galaga {
   background-color: #5c0048;
-  border: 10px solid #a07099;
+  border: 8px solid #a07099;
   box-shadow: 0 5px 0 #835c7e;
 }
 #arkanoid {
   background-color: #a41717;
-  border: 10px solid #e42020;
+  border: 8px solid #e42020;
   box-shadow: 0 5px 0 #b81e1e;
 }
 #kong {
   background-color: #ffb850;
-  border: 10px solid #c54e00;
+  border: 8px solid #c54e00;
   box-shadow: 0 5px 0 #941c00;
 }
 #pacman {
   background-color: #edd94f;
-  border: 10px solid #472c09;
+  border: 8px solid #472c09;
   box-shadow: 0 5px 0 #271805;
 }
 #centipede {
   background-color: #433b70;
-  border: 10px solid #ff6666;
+  border: 8px solid #ff6666;
   box-shadow: 0 5px 0 #cd3434;
 }
 #space {
   background-color: #0361ff;
-  border: 10px solid #6ba9ff;
+  border: 8px solid #6ba9ff;
   box-shadow: 0 5px 0 #5a8fd9;
 }
 #tetris {
   background-color: #29b8e8;
-  border: 10px solid #004d96;
+  border: 8px solid #004d96;
   box-shadow: 0 5px 0 #003970;
 }
 /*----------------------------------------------- BTN BADGE --------*/
