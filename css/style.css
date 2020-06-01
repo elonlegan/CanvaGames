@@ -96,6 +96,12 @@ header nav ul li {
   justify-content: space-between;
   margin: 15px auto;
 }
+
+canvas {
+  border: 3px solid red;
+  border-radius: 10px;
+}
+
 /*----------------------------------------------- BTN BADGE --------*/
 .contain-btn-badge {
   width: 76px;
@@ -122,47 +128,43 @@ header nav ul li {
 
 #frogger {
   background-color: #1f3311;
-  border: 6.08px solid #7bca40;
+  border-color: #7bca40;
   box-shadow: 0 3.8px 0 #6baf30;
 }
 #galaga {
   background-color: #5c0048;
-  border: 6.08px solid #a07099;
+  border-color: #a07099;
   box-shadow: 0 3.8px 0 #835c7e;
 }
 #arkanoid {
   background-color: #a41717;
-  border: 6.08px solid #e42020;
+  border-color: #e42020;
   box-shadow: 0 3.8px 0 #b81e1e;
 }
 #kong {
   background-color: #ffb850;
-  border: 6.08px solid #c54e00;
+  border-color: #c54e00;
   box-shadow: 0 3.8px 0 #941c00;
 }
 #pacman {
   background-color: #edd94f;
-  border: 6.08px solid #472c09;
+  border-color: #472c09;
   box-shadow: 0 3.8px 0 #271805;
 }
 #centipede {
   background-color: #433b70;
-  border: 6.08px solid #ff6666;
+  border-color: #ff6666;
   box-shadow: 0 3.8px 0 #cd3434;
 }
 #space {
   background-color: #0361ff;
-  border: 6.08px solid #6ba9ff;
+  border-color: #6ba9ff;
   box-shadow: 0 3.8px 0 #5a8fd9;
 }
 #tetris {
   background-color: #29b8e8;
-  border: 6.08px solid #004d96;
+  border-color: #004d96;
   box-shadow: 0 3.8px 0 #003970;
 }
 /*----------------------------------------------- BTN BADGE --------*/
-
-canvas {
-  border: 3px solid red;
-}
 /*--------------------- MAIN SECTION --------*/
