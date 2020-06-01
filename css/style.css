@@ -32,7 +32,7 @@ a {
 a:hover {
   opacity: 0.7;
 }
-/*--------------------- GLOBAL START --------*/
+/*--------------------- GLOBAL END --------*/
 
 /*--------------------- HEADER START --------*/
 header {
@@ -98,16 +98,16 @@ header nav ul li {
 }
 /*----------------------------------------------- BTN BADGE --------*/
 .contain-btn-badge {
-  width: 100px;
-  height: 95px;
-  border: 8px solid #f6e01c;
+  width: 76px;
+  height: 69px;
+  border: 6.08px solid #f6e01c;
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  align-items: ;
+  align-items: center;
   background-color: #000000;
   box-sizing: border-box;
-  box-shadow: 0 5px 0 #c9b818;
+  box-shadow: 0 3.8px 0 #c9b818;
   cursor: pointer;
   z-index: 2;
 }
@@ -120,58 +120,49 @@ header nav ul li {
   transform: scale(1);
 }
 
-.btn-badge {
-  flex: 1;
-  border-radius: 50%;
-  align-self: stretch;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #frogger {
   background-color: #1f3311;
-  border: 8px solid #7bca40;
-  box-shadow: 0 5px 0 #6baf30;
+  border: 6.08px solid #7bca40;
+  box-shadow: 0 3.8px 0 #6baf30;
 }
 #galaga {
   background-color: #5c0048;
-  border: 8px solid #a07099;
-  box-shadow: 0 5px 0 #835c7e;
+  border: 6.08px solid #a07099;
+  box-shadow: 0 3.8px 0 #835c7e;
 }
 #arkanoid {
   background-color: #a41717;
-  border: 8px solid #e42020;
-  box-shadow: 0 5px 0 #b81e1e;
+  border: 6.08px solid #e42020;
+  box-shadow: 0 3.8px 0 #b81e1e;
 }
 #kong {
   background-color: #ffb850;
-  border: 8px solid #c54e00;
-  box-shadow: 0 5px 0 #941c00;
+  border: 6.08px solid #c54e00;
+  box-shadow: 0 3.8px 0 #941c00;
 }
 #pacman {
   background-color: #edd94f;
-  border: 8px solid #472c09;
-  box-shadow: 0 5px 0 #271805;
+  border: 6.08px solid #472c09;
+  box-shadow: 0 3.8px 0 #271805;
 }
 #centipede {
   background-color: #433b70;
-  border: 8px solid #ff6666;
-  box-shadow: 0 5px 0 #cd3434;
+  border: 6.08px solid #ff6666;
+  box-shadow: 0 3.8px 0 #cd3434;
 }
 #space {
   background-color: #0361ff;
-  border: 8px solid #6ba9ff;
-  box-shadow: 0 5px 0 #5a8fd9;
+  border: 6.08px solid #6ba9ff;
+  box-shadow: 0 3.8px 0 #5a8fd9;
 }
 #tetris {
   background-color: #29b8e8;
-  border: 8px solid #004d96;
-  box-shadow: 0 5px 0 #003970;
+  border: 6.08px solid #004d96;
+  box-shadow: 0 3.8px 0 #003970;
 }
 /*----------------------------------------------- BTN BADGE --------*/
 
 canvas {
-  border: 1px solid red;
+  border: 3px solid red;
 }
 /*--------------------- MAIN SECTION --------*/
