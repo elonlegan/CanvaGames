@@ -16,6 +16,7 @@
 /*--------------------- GLOBAL START --------*/
 body {
   font-family: var(--fuente-primaria);
+  background-color: var(--fondo-oscuro);
 }
 
 ul,
@@ -80,15 +81,13 @@ header nav ul li {
 /*--------------------- MAIN SECTION --------*/
 
 .main {
-  background-color: var(--fondo-claro);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 53px);
+  height: calc(100vh - 53px - 30px);
 }
 
-.container-main {
-  margin: 10px;
+.container {
 }
 
 .badges {
@@ -97,11 +96,16 @@ header nav ul li {
   margin: 15px auto;
 }
 
-canvas {
+.canvas-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.canvas-container canvas {
   border: 3px solid red;
   border-radius: 10px;
 }
-
 /*----------------------------------------------- BTN BADGE --------*/
 .contain-btn-badge {
   width: 76px;
@@ -116,6 +120,7 @@ canvas {
   box-shadow: 0 3.8px 0 #c9b818;
   cursor: pointer;
   z-index: 2;
+  margin: 0 4.5px;
 }
 
 .contain-btn-badge:hover {
@@ -168,3 +173,14 @@ canvas {
 }
 /*----------------------------------------------- BTN BADGE --------*/
 /*--------------------- MAIN SECTION --------*/
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("https://i.imgur.com/rjOSMqe.png");
+  background-repeat: repeat-x;
+  background-size: 15px;
+  background-position: center;
+  margin: 20px;
+}
