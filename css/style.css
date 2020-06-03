@@ -16,7 +16,7 @@
 /*--------------------- GLOBAL START --------*/
 body {
   font-family: var(--fuente-primaria);
-  background-color: var(--fondo-oscuro);
+  background-color: var(--fondo-claro);
 }
 
 ul,
@@ -85,9 +85,6 @@ header nav ul li {
   justify-content: center;
   align-items: center;
   height: calc(100vh - 53px - 30px);
-}
-
-.container {
 }
 
 .badges {
@@ -184,3 +181,47 @@ header nav ul li {
   background-position: center;
   margin: 0px 20px 40px;
 }
+
+/*--------------------- RUlES SECTION --------*/
+
+.tabs-container {
+  position: relative;
+  border: 1px solid;
+  width: 500px;
+  margin: 2em auto;
+}
+
+.tabs {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.tabs__item {
+  border: 1px solid #ccc;
+  line-height: 2.5;
+  padding: 0 1em;
+  margin-right: 1px;
+  background-color: #eee;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+}
+
+.tabs__item.active {
+  border: 1px solid blue;
+}
+
+.panels {
+  border: 1px solid #ccc;
+  padding: 1em;
+}
+
+.panels__item {
+  display: none;
+}
+
+.panels__item.active {
+  display: block;
+}
+
+/*--------------------- RUlES SECTION --------*/
