@@ -16,6 +16,7 @@
 body {
   font-family: var(--fuente-primaria);
   background-color: var(--fondo-oscuro);
+  color: var(--color-blanco);
 }
 
 ul,
@@ -26,7 +27,6 @@ ol {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: var(--color-blanco);
 }
 
 a:hover {
@@ -179,9 +179,9 @@ header nav ul li {
   align-items: center;
   background-image: url("https://i.imgur.com/rjOSMqe.png");
   background-repeat: repeat-x;
-  background-size: 15px;
   background-position: center;
-  margin: 0px 20px 40px;
+  background-size: 15px;
+  margin: 0px 20px;
 }
 
 /*--------------------- RUlES SECTION --------*/
@@ -192,7 +192,7 @@ header nav ul li {
 
 .tabs {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -203,49 +203,67 @@ header nav ul li {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 5px 5px 0 0;
   cursor: pointer;
+  background-color: #2e3042 !important;
+  border-top: 5px solid red;
+  -webkit-box-shadow: 0px 9px 7px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 7px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 9px 7px -3px rgba(0, 0, 0, 0.75);
+  border-color: #191a24;
+  border-radius: 20%;
 }
 
 .tabs-item.active {
   border-bottom: 5px solid;
+  z-index: 10;
+  transform: scale(1.1);
 }
 /*----------------------------------------------- CHANGES BY ID TO TABS --------*/
 .tabs-item#arkanoid {
-  border-color: #e42020;
+  border-bottom-color: #e42020;
   background-image: url("https://i.imgur.com/zclQt4C.png");
+  background-color: #a41717;
 }
 .tabs-item#kong {
-  border-color: #c54e00;
+  border-bottom-color: #c54e00;
   background-image: url("https://i.imgur.com/1igRXn3.png");
+  background-color: #ffb850;
 }
 .tabs-item#pong {
-  border-color: #f6e01c;
+  border-bottom-color: #f6e01c;
   background-image: url("https://i.imgur.com/gkShWGs.png");
+  background-color: #000000;
+  background-size: 100%;
 }
 .tabs-item#pacman {
-  border-color: #472c09;
+  border-bottom-color: #472c09;
   background-image: url("https://i.imgur.com/KxYEK7Y.png");
+  background-color: #edd94f;
 }
 .tabs-item#frogger {
-  border-color: #7bca40;
+  border-bottom-color: #7bca40;
   background-image: url("https://i.imgur.com/PL8iIMV.png");
+  background-color: #1f3311;
 }
 .tabs-item#space {
-  border-color: #6ba9ff;
+  border-bottom-color: #6ba9ff;
   background-image: url("https://i.imgur.com/LgpzNFn.png");
+  background-color: #0361ff;
 }
 .tabs-item#tetris {
-  border-color: #004d96;
+  border-bottom-color: #004d96;
   background-image: url("https://i.imgur.com/t1RbvC0.png");
+  background-color: #29b8e8;
 }
 .tabs-item#galaga {
-  border-color: #a07099;
+  border-bottom-color: #a07099;
   background-image: url("https://i.imgur.com/5V3uRbF.png");
+  background-color: #5c0048;
 }
 .tabs-item#centipede {
-  border-color: #ff6666;
+  border-bottom-color: #ff6666;
   background-image: url("https://i.imgur.com/101qRBj.png");
+  background-color: #433b70;
 }
 /*----------------------------------------------- CHANGES BY ID TO TABS --------*/
 
