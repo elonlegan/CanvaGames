@@ -12,11 +12,10 @@
   --fuente-primaria: "Lato", sans-serif;
 }
 /*--------------------- VARIABLES --------*/
-
 /*--------------------- GLOBAL START --------*/
 body {
   font-family: var(--fuente-primaria);
-  background-color: var(--fondo-claro);
+  background-color: var(--fondo-oscuro);
 }
 
 ul,
@@ -107,14 +106,12 @@ header nav ul li {
 .contain-btn-badge {
   width: 76px;
   height: 69px;
-  border: 6.08px solid #f6e01c;
+  border: 6.08px solid;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000000;
   box-sizing: border-box;
-  box-shadow: 0 3.8px 0 #c9b818;
   cursor: pointer;
   z-index: 2;
   margin: 0 4.5px;
@@ -128,45 +125,50 @@ header nav ul li {
   transform: scale(1);
 }
 
-#frogger {
-  background-color: #1f3311;
-  border-color: #7bca40;
-  box-shadow: 0 3.8px 0 #6baf30;
-}
-#galaga {
-  background-color: #5c0048;
-  border-color: #a07099;
-  box-shadow: 0 3.8px 0 #835c7e;
-}
-#arkanoid {
+.contain-btn-badge#arkanoid {
   background-color: #a41717;
   border-color: #e42020;
   box-shadow: 0 3.8px 0 #b81e1e;
 }
-#kong {
+.contain-btn-badge#kong {
   background-color: #ffb850;
   border-color: #c54e00;
   box-shadow: 0 3.8px 0 #941c00;
 }
-#pacman {
+.contain-btn-badge#pong {
+  background-color: #000000;
+  border-color: #f6e01c;
+  box-shadow: 0 3.8px 0 #c9b818;
+}
+.contain-btn-badge#pacman {
   background-color: #edd94f;
   border-color: #472c09;
   box-shadow: 0 3.8px 0 #271805;
 }
-#centipede {
-  background-color: #433b70;
-  border-color: #ff6666;
-  box-shadow: 0 3.8px 0 #cd3434;
+.contain-btn-badge#frogger {
+  background-color: #1f3311;
+  border-color: #7bca40;
+  box-shadow: 0 3.8px 0 #6baf30;
 }
-#space {
+.contain-btn-badge#space {
   background-color: #0361ff;
   border-color: #6ba9ff;
   box-shadow: 0 3.8px 0 #5a8fd9;
 }
-#tetris {
+.contain-btn-badge#tetris {
   background-color: #29b8e8;
   border-color: #004d96;
   box-shadow: 0 3.8px 0 #003970;
+}
+.contain-btn-badge#galaga {
+  background-color: #5c0048;
+  border-color: #a07099;
+  box-shadow: 0 3.8px 0 #835c7e;
+}
+.contain-btn-badge#centipede {
+  background-color: #433b70;
+  border-color: #ff6666;
+  box-shadow: 0 3.8px 0 #cd3434;
 }
 /*----------------------------------------------- BTN BADGE --------*/
 /*--------------------- MAIN SECTION --------*/
@@ -185,43 +187,78 @@ header nav ul li {
 /*--------------------- RUlES SECTION --------*/
 
 .tabs-container {
-  position: relative;
-  border: 1px solid;
-  width: 500px;
-  margin: 2em auto;
+  padding: 20px;
 }
 
 .tabs {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: space-between;
 }
 
-.tabs__item {
-  border: 1px solid #ccc;
-  line-height: 2.5;
-  padding: 0 1em;
-  margin-right: 1px;
-  background-color: #eee;
+.tabs-item {
+  width: 100%;
+  height: 10vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 5px 5px 0 0;
   cursor: pointer;
 }
 
-.tabs__item.active {
-  border: 1px solid blue;
+.tabs-item.active {
+  border-bottom: 5px solid;
 }
-
-.panels {
-  border: 1px solid #ccc;
-  padding: 1em;
+/*----------------------------------------------- CHANGES BY ID TO TABS --------*/
+.tabs-item#arkanoid {
+  border-color: #e42020;
+  background-image: url("https://i.imgur.com/zclQt4C.png");
 }
+.tabs-item#kong {
+  border-color: #c54e00;
+  background-image: url("https://i.imgur.com/1igRXn3.png");
+}
+.tabs-item#pong {
+  border-color: #f6e01c;
+  background-image: url("https://i.imgur.com/gkShWGs.png");
+}
+.tabs-item#pacman {
+  border-color: #472c09;
+  background-image: url("https://i.imgur.com/KxYEK7Y.png");
+}
+.tabs-item#frogger {
+  border-color: #7bca40;
+  background-image: url("https://i.imgur.com/PL8iIMV.png");
+}
+.tabs-item#space {
+  border-color: #6ba9ff;
+  background-image: url("https://i.imgur.com/LgpzNFn.png");
+}
+.tabs-item#tetris {
+  border-color: #004d96;
+  background-image: url("https://i.imgur.com/t1RbvC0.png");
+}
+.tabs-item#galaga {
+  border-color: #a07099;
+  background-image: url("https://i.imgur.com/5V3uRbF.png");
+}
+.tabs-item#centipede {
+  border-color: #ff6666;
+  background-image: url("https://i.imgur.com/101qRBj.png");
+}
+/*----------------------------------------------- CHANGES BY ID TO TABS --------*/
 
-.panels__item {
+.panels-item {
   display: none;
 }
 
-.panels__item.active {
+.panels-item.active {
   display: block;
 }
 
 /*--------------------- RUlES SECTION --------*/
+
+.none {
+  display: none;
+}

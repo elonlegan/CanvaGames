@@ -1,8 +1,8 @@
 (function (d) {
-  let tabs = Array.prototype.slice.apply(d.querySelectorAll(".tabs__item"));
-  let panels = Array.prototype.slice.apply(d.querySelectorAll(".panels__item"));
+  let tabs = Array.prototype.slice.apply(d.querySelectorAll(".tabs-item"));
+  let panels = Array.prototype.slice.apply(d.querySelectorAll(".panels-item"));
   d.getElementById("tabs").addEventListener("click", (e) => {
-    if (e.target.classList.contains("tabs__item")) {
+    if (e.target.classList.contains("tabs-item")) {
       let i = tabs.indexOf(e.target);
       tabs.map((tab) => tab.classList.remove("active"));
       tabs[i].classList.add("active");
