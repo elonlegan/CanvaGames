@@ -27,6 +27,7 @@ ol {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: var(--color-blanco);
 }
 
 a:hover {
@@ -196,74 +197,88 @@ header nav ul li {
   display: flex;
   justify-content: space-between;
 }
+.border-gradient {
+  width: 100%;
+  height: calc(10vw + 5px);
+  padding: 0 0 10px 0;
+  -webkit-box-shadow: 0px 9px 7px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 7px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 9px 7px -3px rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
 
-.tabs-item {
+.border-gradient.active {
+  background-image: linear-gradient(to right, red, purple);
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.border-gradient .tabs-item {
   width: 100%;
   height: 10vw;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-  background-color: #2e3042 !important;
-  border-top: 5px solid red;
-  -webkit-box-shadow: 0px 9px 7px -3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 9px 7px -3px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 9px 7px -3px rgba(0, 0, 0, 0.75);
+  background-color: #2e3042;
+  border-top: 5px solid;
   border-color: #191a24;
-  border-radius: 20%;
-}
-
-.tabs-item.active {
-  border-bottom: 5px solid;
-  z-index: 10;
-  transform: scale(1.1);
 }
 /*----------------------------------------------- CHANGES BY ID TO TABS --------*/
 .tabs-item#arkanoid {
-  border-bottom-color: #e42020;
   background-image: url("https://i.imgur.com/zclQt4C.png");
-  background-color: #a41717;
 }
 .tabs-item#kong {
-  border-bottom-color: #c54e00;
   background-image: url("https://i.imgur.com/1igRXn3.png");
-  background-color: #ffb850;
 }
 .tabs-item#pong {
-  border-bottom-color: #f6e01c;
   background-image: url("https://i.imgur.com/gkShWGs.png");
-  background-color: #000000;
-  background-size: 100%;
 }
 .tabs-item#pacman {
-  border-bottom-color: #472c09;
-  background-image: url("https://i.imgur.com/KxYEK7Y.png");
-  background-color: #edd94f;
+  background-image: url("https://i.imgur.com/oKJqvYf.png");
 }
 .tabs-item#frogger {
-  border-bottom-color: #7bca40;
   background-image: url("https://i.imgur.com/PL8iIMV.png");
-  background-color: #1f3311;
 }
 .tabs-item#space {
-  border-bottom-color: #6ba9ff;
   background-image: url("https://i.imgur.com/LgpzNFn.png");
-  background-color: #0361ff;
 }
 .tabs-item#tetris {
-  border-bottom-color: #004d96;
   background-image: url("https://i.imgur.com/t1RbvC0.png");
-  background-color: #29b8e8;
 }
 .tabs-item#galaga {
-  border-bottom-color: #a07099;
   background-image: url("https://i.imgur.com/5V3uRbF.png");
-  background-color: #5c0048;
 }
 .tabs-item#centipede {
-  border-bottom-color: #ff6666;
   background-image: url("https://i.imgur.com/101qRBj.png");
-  background-color: #433b70;
+}
+/*----------------------------------------------- CHANGES BY ID TO GRADIENTS --------*/
+.border-gradient.active#arkanoid {
+  background-image: linear-gradient(to right, #e42020, #a41717);
+}
+.border-gradient.active#kong {
+  background-image: linear-gradient(to right, #ffb850, #c54e00);
+}
+.border-gradient.active#pong {
+  background-image: linear-gradient(to right, #000, #f6e01c);
+}
+.border-gradient.active#pacman {
+  background-image: linear-gradient(to right, #edd94f, #472c09);
+}
+.border-gradient.active#frogger {
+  background-image: linear-gradient(to right, #1f3311, #7bca40);
+}
+.border-gradient.active#space {
+  background-image: linear-gradient(to right, #0361ff, #6ba9ff);
+}
+.border-gradient.active#tetris {
+  background-image: linear-gradient(to right, #29b8e8, #004d96);
+}
+.border-gradient.active#galaga {
+  background-image: linear-gradient(to right, #5c0048, #a07099);
+}
+.border-gradient.active#centipede {
+  background-image: linear-gradient(to right, #433b70, #ff6666);
 }
 /*----------------------------------------------- CHANGES BY ID TO TABS --------*/
 
