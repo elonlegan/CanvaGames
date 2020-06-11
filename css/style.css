@@ -218,7 +218,6 @@ header nav ul li {
 
 .border-gradient.active {
   background-image: linear-gradient(to right, red, purple);
-  transform: scale(1.1);
   z-index: 10;
 }
 
