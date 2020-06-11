@@ -1,6 +1,6 @@
 /*--------------------- VARIABLES --------*/
 :root {
-  --fondo-oscuro: #232533;
+  --fondo-oscuro: #1d2029;
   --fondo-claro: #f5f7fb;
 
   --color-primario: #505ef4;
@@ -9,7 +9,7 @@
   --color-secundario-oscuro: #888ab7;
   --color-blanco: #ffffff;
 
-  --fuente-primaria: "Lato", sans-serif;
+  --fuente-primaria: "Rubik", sans-serif;
 }
 /*--------------------- VARIABLES --------*/
 /*--------------------- GLOBAL START --------*/
@@ -190,7 +190,8 @@ header nav ul li {
   width: fit-content;
   margin: 20px auto;
   text-transform: capitalize;
-  font-size: 40px;
+  font-size: 2em;
+  font-weight: 500;
 }
 /*------------------------------------------------------------------------------------------------------------ TABS --------*/
 .tabs-container {
@@ -228,9 +229,9 @@ header nav ul li {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-  background-color: #2e3042;
+  background-color: #252b43;
   border-top: 5px solid;
-  border-color: #191a24;
+  border-color: #171a29;
   border-radius: 20%;
 }
 /*----------------------------------------------- CHANGES BY ID TO TABS --------*/
