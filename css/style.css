@@ -1,6 +1,6 @@
 /*--------------------- VARIABLES --------*/
 :root {
-  --fondo-oscuro: #232533;
+  --fondo-oscuro: #1d2029;
   --fondo-claro: #f5f7fb;
 
   --color-primario: #505ef4;
@@ -9,14 +9,14 @@
   --color-secundario-oscuro: #888ab7;
   --color-blanco: #ffffff;
 
-  --fuente-primaria: "Lato", sans-serif;
+  --fuente-primaria: "Rubik", sans-serif;
 }
 /*--------------------- VARIABLES --------*/
-
 /*--------------------- GLOBAL START --------*/
 body {
   font-family: var(--fuente-primaria);
   background-color: var(--fondo-oscuro);
+  color: var(--color-blanco);
 }
 
 ul,
@@ -87,9 +87,6 @@ header nav ul li {
   height: calc(100vh - 53px - 30px);
 }
 
-.container {
-}
-
 .badges {
   display: flex;
   justify-content: space-between;
@@ -110,14 +107,12 @@ header nav ul li {
 .contain-btn-badge {
   width: 76px;
   height: 69px;
-  border: 6.08px solid #f6e01c;
+  border: 6.08px solid;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000000;
   box-sizing: border-box;
-  box-shadow: 0 3.8px 0 #c9b818;
   cursor: pointer;
   z-index: 2;
   margin: 0 4.5px;
@@ -131,45 +126,50 @@ header nav ul li {
   transform: scale(1);
 }
 
-#frogger {
-  background-color: #1f3311;
-  border-color: #7bca40;
-  box-shadow: 0 3.8px 0 #6baf30;
-}
-#galaga {
-  background-color: #5c0048;
-  border-color: #a07099;
-  box-shadow: 0 3.8px 0 #835c7e;
-}
-#arkanoid {
+.contain-btn-badge#arkanoid {
   background-color: #a41717;
   border-color: #e42020;
   box-shadow: 0 3.8px 0 #b81e1e;
 }
-#kong {
+.contain-btn-badge#kong {
   background-color: #ffb850;
   border-color: #c54e00;
   box-shadow: 0 3.8px 0 #941c00;
 }
-#pacman {
+.contain-btn-badge#pong {
+  background-color: #000000;
+  border-color: #f6e01c;
+  box-shadow: 0 3.8px 0 #c9b818;
+}
+.contain-btn-badge#pacman {
   background-color: #edd94f;
   border-color: #472c09;
   box-shadow: 0 3.8px 0 #271805;
 }
-#centipede {
-  background-color: #433b70;
-  border-color: #ff6666;
-  box-shadow: 0 3.8px 0 #cd3434;
+.contain-btn-badge#frogger {
+  background-color: #1f3311;
+  border-color: #7bca40;
+  box-shadow: 0 3.8px 0 #6baf30;
 }
-#space {
+.contain-btn-badge#space {
   background-color: #0361ff;
   border-color: #6ba9ff;
   box-shadow: 0 3.8px 0 #5a8fd9;
 }
-#tetris {
+.contain-btn-badge#tetris {
   background-color: #29b8e8;
   border-color: #004d96;
   box-shadow: 0 3.8px 0 #003970;
+}
+.contain-btn-badge#galaga {
+  background-color: #5c0048;
+  border-color: #a07099;
+  box-shadow: 0 3.8px 0 #835c7e;
+}
+.contain-btn-badge#centipede {
+  background-color: #433b70;
+  border-color: #ff6666;
+  box-shadow: 0 3.8px 0 #cd3434;
 }
 /*----------------------------------------------- BTN BADGE --------*/
 /*--------------------- MAIN SECTION --------*/
@@ -180,7 +180,154 @@ header nav ul li {
   align-items: center;
   background-image: url("https://i.imgur.com/rjOSMqe.png");
   background-repeat: repeat-x;
-  background-size: 15px;
   background-position: center;
+  background-size: 15px;
   margin: 40px 20px;
+}
+
+/*--------------------- RUlES SECTION --------*/
+.rules-title {
+  width: fit-content;
+  margin: 20px auto;
+  text-transform: capitalize;
+  font-size: 2em;
+  font-weight: 500;
+}
+/*------------------------------------------------------------------------------------------------------------ TABS --------*/
+.tabs-container {
+  padding: 20px;
+}
+
+.tabs {
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.border-gradient {
+  width: 100%;
+  height: calc(10vw + 5px);
+  padding: 0 0 10px 0;
+  -webkit-box-shadow: 0px 9px 7px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 7px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 9px 7px -3px rgba(0, 0, 0, 0.75);
+  z-index: 1;
+  border-radius: 20%;
+  margin: 0 10px 10px 0;
+}
+
+.border-gradient.active {
+  background-image: linear-gradient(to right, red, purple);
+  z-index: 10;
+}
+
+.border-gradient .tabs-item {
+  width: 100%;
+  height: 10vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-color: #252b43;
+  border-top: 5px solid;
+  border-color: #171a29;
+  border-radius: 20%;
+}
+/*----------------------------------------------- CHANGES BY ID TO TABS --------*/
+.tabs-item#arkanoid {
+  background-image: url("https://i.imgur.com/zclQt4C.png");
+}
+.tabs-item#kong {
+  background-image: url("https://i.imgur.com/1igRXn3.png");
+}
+.tabs-item#pong {
+  background-image: url("https://i.imgur.com/gkShWGs.png");
+}
+.tabs-item#pacman {
+  background-image: url("https://i.imgur.com/oKJqvYf.png");
+}
+.tabs-item#frogger {
+  background-image: url("https://i.imgur.com/PL8iIMV.png");
+}
+.tabs-item#space {
+  background-image: url("https://i.imgur.com/LgpzNFn.png");
+}
+.tabs-item#tetris {
+  background-image: url("https://i.imgur.com/t1RbvC0.png");
+}
+.tabs-item#galaga {
+  background-image: url("https://i.imgur.com/5V3uRbF.png");
+}
+.tabs-item#centipede {
+  background-image: url("https://i.imgur.com/101qRBj.png");
+}
+.tabs-item.active#arkanoid {
+  background-color: #a41717;
+}
+.tabs-item.active#kong {
+  background-color: #ffb850;
+}
+.tabs-item.active#pong {
+  background-color: #000;
+}
+.tabs-item.active#pacman {
+  background-color: #edd94f;
+}
+.tabs-item.active#frogger {
+  background-color: #1f3311;
+}
+.tabs-item.active#space {
+  background-color: #0361ff;
+}
+.tabs-item.active#tetris {
+  background-color: #29b8e8;
+}
+.tabs-item.active#galaga {
+  background-color: #5c0048;
+}
+.tabs-item.active#centipede {
+  background-color: #433b70;
+}
+/*----------------------------------------------- CHANGES BY ID TO GRADIENTS --------*/
+.border-gradient.active#arkanoid {
+  background-image: linear-gradient(to right, #e42020, #a41717);
+}
+.border-gradient.active#kong {
+  background-image: linear-gradient(to right, #ffb850, #c54e00);
+}
+.border-gradient.active#pong {
+  background-image: linear-gradient(to right, #000, #f6e01c);
+}
+.border-gradient.active#pacman {
+  background-image: linear-gradient(to right, #edd94f, #472c09);
+}
+.border-gradient.active#frogger {
+  background-image: linear-gradient(to right, #1f3311, #7bca40);
+}
+.border-gradient.active#space {
+  background-image: linear-gradient(to right, #0361ff, #6ba9ff);
+}
+.border-gradient.active#tetris {
+  background-image: linear-gradient(to right, #29b8e8, #004d96);
+}
+.border-gradient.active#galaga {
+  background-image: linear-gradient(to right, #5c0048, #a07099);
+}
+.border-gradient.active#centipede {
+  background-image: linear-gradient(to right, #433b70, #ff6666);
+}
+/*----------------------------------------------- CHANGES BY ID TO TABS --------*/
+/*------------------------------------------------------------------------------------------------------------ TABS --------*/
+.panels-item {
+  display: none;
+}
+
+.panels-item.active {
+  display: block;
+}
+
+/*--------------------- RUlES SECTION --------*/
+
+.none {
+  display: none;
 }
