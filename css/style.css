@@ -185,6 +185,10 @@ header nav ul li {
   margin: 0 20px 40px;
 }
 
+.line#galaga {
+  background-image: url("https://i.imgur.com/t3Tzv3J.png");
+}
+
 /*--------------------- RUlES SECTION --------*/
 .rules-title {
   width: fit-content;
