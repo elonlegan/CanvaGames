@@ -33,6 +33,12 @@ a {
 a:hover {
   opacity: 0.7;
 }
+
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+}
 /*--------------------- GLOBAL END --------*/
 
 /*--------------------- HEADER START --------*/
@@ -182,7 +188,7 @@ header nav ul li {
   background-repeat: repeat-x;
   background-position: center;
   background-size: 15px;
-  margin: 0 20px 40px;
+  margin: 0 20px 20px;
 }
 
 .line#galaga {
@@ -190,12 +196,8 @@ header nav ul li {
 }
 
 /*--------------------- RULES SECTION --------*/
-.rules-title {
-  width: fit-content;
-  margin: 20px auto;
-  text-transform: capitalize;
-  font-size: 2em;
-  font-weight: 500;
+.rules {
+  padding: 0 20px;
 }
 /*------------------------------------------------------------------------------------------------------------ TABS --------*/
 .tabs-container {
@@ -332,11 +334,18 @@ header nav ul li {
 
 /*--------------------- RULES SECTION --------*/
 /*--------------------- NEWS SECTION --------*/
+.news-section {
+  padding: 0 20px;
+}
+
 figure {
   margin: 0;
 }
 
 .news-list {
+}
+
+.news-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
