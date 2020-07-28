@@ -189,7 +189,7 @@ header nav ul li {
   background-image: url("https://i.imgur.com/t3Tzv3J.png");
 }
 
-/*--------------------- RUlES SECTION --------*/
+/*--------------------- RULES SECTION --------*/
 .rules-title {
   width: fit-content;
   margin: 20px auto;
@@ -330,8 +330,59 @@ header nav ul li {
   display: block;
 }
 
-/*--------------------- RUlES SECTION --------*/
+/*--------------------- RULES SECTION --------*/
+/*--------------------- NEWS SECTION --------*/
+figure {
+  margin: 0;
+}
 
+.news-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.news-list-title {
+  margin-left: 20px;
+}
+
+.news {
+  margin: 10px;
+  width: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background-color: #252b43;
+}
+
+.news img {
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-detail {
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: var(--fondo-oscuro);
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.news-description {
+  text-align: left;
+}
+
+.news-url {
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #2e0085;
+  border-radius: 5px;
+}
+
+/*--------------------- NEWS SECTION --------*/
 .none {
   display: none;
 }
