@@ -383,15 +383,54 @@ figure {
   text-align: left;
 }
 
-.news-url {
+.news-url,
+.mail-link {
   border: 1px solid;
   padding: 5px 20px;
-  text-decoration: none;
-  color: #2e0085;
   border-radius: 5px;
+  color: #bd9aff;
 }
 
 /*--------------------- NEWS SECTION --------*/
+
+/*--------------------- FOOTER --------*/
+.footer {
+  background-color: #5900ff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.mail-link {
+  color: var(--color-blanco);
+}
+
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-size: 50px 50px;
+}
+
+.social-link.twitter {
+  background-image: url("../images/twitter.svg");
+}
+.social-link.facebook {
+  background-image: url("../images/facebook.svg");
+}
+.social-link.github {
+  background-image: url("../images/github.svg");
+}
+.social-link.instagram {
+  background-image: url("../images/instagram.svg");
+}
+
+/*--------------------- FOOTER --------*/
+
 .none {
   display: none;
 }
