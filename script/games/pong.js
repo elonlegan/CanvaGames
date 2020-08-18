@@ -23,7 +23,7 @@ const ball = {
   velocityX: 5,
   velocityY: 5,
   speed: 7,
-  color: "WHITE",
+  color: "#e6d219",
 };
 
 // User Paddle
@@ -33,7 +33,7 @@ const user = {
   width: 10,
   height: 100,
   score: 0,
-  color: "WHITE",
+  color: "#e6d219",
 };
 
 // COM Paddle
@@ -43,7 +43,7 @@ const com = {
   width: 10,
   height: 100,
   score: 0,
-  color: "WHITE",
+  color: "#e6d219",
 };
 
 // NET
@@ -52,7 +52,7 @@ const net = {
   y: 0,
   height: 10,
   width: 2,
-  color: "WHITE",
+  color: "#e6d219",
 };
 
 // draw a rectangle, will be used to draw paddles
@@ -96,7 +96,7 @@ function drawNet() {
 
 // draw text
 function drawText(text, x, y) {
-  ctx.fillStyle = "#FFF";
+  ctx.fillStyle = "#e6d219";
   ctx.font = "75px fantasy";
   ctx.fillText(text, x, y);
 }
