@@ -105,9 +105,11 @@ header nav ul li {
   justify-content: center;
 }
 
-.canvas-container canvas {
-  border: 3px solid red;
+.canvas {
+  border: 3px solid #5900ff;
   border-radius: 10px;
+  width: 750px;
+  height: 375px;
 }
 /*----------------------------------------------- BTN BADGE --------*/
 .contain-btn-badge {
