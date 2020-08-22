@@ -93,6 +93,10 @@ header nav ul li {
   height: calc(100vh - 53px - 30px);
 }
 
+.main-container {
+  text-align: center;
+}
+
 .badges {
   display: flex;
   justify-content: space-between;
@@ -105,9 +109,11 @@ header nav ul li {
   justify-content: center;
 }
 
-.canvas-container canvas {
-  border: 3px solid red;
+.canvas {
+  border: 3px solid #5900ff;
   border-radius: 10px;
+  width: 750px;
+  height: 375px;
 }
 /*----------------------------------------------- BTN BADGE --------*/
 .contain-btn-badge {
