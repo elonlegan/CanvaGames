@@ -138,6 +138,10 @@ header nav ul li {
   transform: scale(1);
 }
 
+.badge {
+  width: 112%;
+}
+
 .contain-btn-badge#arkanoid {
   background-color: #a41717;
   border-color: #e42020;

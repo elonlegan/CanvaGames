@@ -1,8 +1,45 @@
-@media screen and (max-width: 1023px) {
-  .canvas {
-    width: 80vw;
-    height: 40vw;
-  }
+.canvas {
+  width: 80vw;
+  height: 40vw;
+}
+.badges {
+  width: 80vw;
+}
+
+.contain-btn-badge {
+  width: calc(100% / 9);
+  width: 10%;
+  height: 8vw;
+  border: 0.8vw solid;
+  box-shadow: 0 0.3vw 0;
+}
+
+.contain-btn-badge#arkanoid {
+  box-shadow: 0 0.3vw 0 #b81e1e;
+}
+.contain-btn-badge#kong {
+  box-shadow: 0 0.3vw 0 #941c00;
+}
+.contain-btn-badge#pong {
+  box-shadow: 0 0.3vw 0 #c9b818;
+}
+.contain-btn-badge#pacman {
+  box-shadow: 0 0.3vw 0 #271805;
+}
+.contain-btn-badge#frogger {
+  box-shadow: 0 0.3vw 0 #6baf30;
+}
+.contain-btn-badge#space {
+  box-shadow: 0 0.3vw 0 #5a8fd9;
+}
+.contain-btn-badge#tetris {
+  box-shadow: 0 0.3vw 0 #003970;
+}
+.contain-btn-badge#galaga {
+  box-shadow: 0 0.3vw 0 #835c7e;
+}
+.contain-btn-badge#centipede {
+  box-shadow: 0 0.3vw 0 #cd3434;
 }
 
 @media screen and (max-width: 767px) {
