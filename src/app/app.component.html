@@ -1,0 +1,573 @@
+<! -- Header start -->
+<header>
+  <div class="logo">
+    <img
+      class="logo-image"
+      src="https://i.imgur.com/dhOVN2n.png"
+      alt="logo image"
+      height="32"
+    />
+    <span class="logo-text">CanvaGames</span>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#rules">Rules</a></li>
+      <li><a href="#news">News</a></li>
+    </ul>
+  </nav>
+</header>
+<! -- Header end -->
+
+<! --Main section start -->
+<section class="main">
+  <div class="main-container">
+    <div class="badges">
+      <div class="contain-btn-badge" id="arkanoid" onclick="changeGame(0);">
+        <img
+          class="badge"
+          src="https://i.imgur.com/zclQt4C.png"
+          alt="badge arkanoid"
+        />
+      </div>
+      <div class="contain-btn-badge" id="kong" onclick="changeGame(1);">
+        <img
+          class="badge"
+          src="https://i.imgur.com/1igRXn3.png"
+          alt="badge donkey kong"
+        />
+      </div>
+      <div class="contain-btn-badge" id="pong" onclick="changeGame(2);">
+        <img
+          class="badge"
+          src="https://i.imgur.com/gkShWGs.png"
+          alt="badge pong"
+        />
+      </div>
+      <div class="contain-btn-badge" id="pacman" onclick="changeGame(3);">
+        <img
+          class="badge"
+          src="https://i.imgur.com/oKJqvYf.png"
+          alt="badge pacman"
+        />
+      </div>
+      <div class="contain-btn-badge" id="frogger" onclick="changeGame(4);">
+        <img
+          class="badge"
+          src="https://i.imgur.com/PL8iIMV.png"
+          alt="badge frogger"
+        />
+      </div>
+      <div class="contain-btn-badge" id="space" onclick="changeGame(5);">
+        <img
+          class="badge"
+          src="https://i.imgur.com/LgpzNFn.png"
+          alt="badge spaceinvaders"
+        />
+      </div>
+      <div class="contain-btn-badge" id="tetris" onclick="changeGame(6);">
+        <img
+          class="badge"
+          src="https://i.imgur.com/t1RbvC0.png"
+          width="72.2
+            "
+          alt="badge tetris"
+        />
+      </div>
+      <div class="contain-btn-badge" id="galaga" onclick="changeGame(7);">
+        <img
+          class="badge"
+          src="https://i.imgur.com/5V3uRbF.png"
+          alt="badge galaga"
+        />
+      </div>
+      <div class="contain-btn-badge" id="centipede" onclick="changeGame(8);">
+        <img
+          class="badge"
+          src="https://i.imgur.com/101qRBj.png"
+          alt="badge centipede"
+        />
+      </div>
+    </div>
+    <img
+      src="https://media.giphy.com/media/LmxoljK1BQ3pJH62v4/giphy.gif"
+      alt=""
+      class="canvas"
+      id="gif"
+    />
+    <img
+      src="https://media.giphy.com/media/JrdZsJYv3JGjXAot8F/giphy.gif"
+      alt=""
+      class="canvas none"
+      id="gifError"
+    />
+    <div class="canvas-container">
+      <canvas class="canvas none" width="750" height="375" id="canvas">
+      </canvas>
+    </div>
+  </div>
+</section>
+<! --Main section end -->
+
+<div class="line">
+  <img src="https://i.imgur.com/xYCLZr9.png" alt="" height="30" />
+  <img src="https://i.imgur.com/XVP5x41.png" alt="" height="30" />
+</div>
+
+<! --Rules section start -->
+<section id="rules" class="rules">
+  <h2>rules and instructions</h2>
+  <div class="tabs-container">
+    <ul class="tabs" id="tabs">
+      <div class="border-gradient active" id="arkanoid">
+        <li class="tabs-item active" id="arkanoid"></li>
+      </div>
+      <div class="border-gradient" id="kong">
+        <li class="tabs-item" id="kong"></li>
+      </div>
+      <div class="border-gradient" id="pong">
+        <li class="tabs-item" id="pong"></li>
+      </div>
+      <div class="border-gradient" id="pacman">
+        <li class="tabs-item" id="pacman"></li>
+      </div>
+      <div class="border-gradient" id="frogger">
+        <li class="tabs-item" id="frogger"></li>
+      </div>
+      <div class="border-gradient" id="space">
+        <li class="tabs-item" id="space"></li>
+      </div>
+      <div class="border-gradient" id="tetris">
+        <li class="tabs-item" id="tetris"></li>
+      </div>
+      <div class="border-gradient" id="galaga">
+        <li class="tabs-item" id="galaga"></li>
+      </div>
+      <div class="border-gradient" id="centipede">
+        <li class="tabs-item" id="centipede"></li>
+      </div>
+    </ul>
+    <div class="pannels">
+      <div class="panels-item active">
+        <h2>Arkanoid</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          assumenda voluptates dicta eius eveniet cum et eligendi, ea
+          voluptatem, vitae unde! Nemo quas facere fuga possimus perferendis
+          blanditiis nihil assumenda. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Perspiciatis, molestiae consequatur? Nostrum aut quo
+          possimus velit repellat cum molestias veniam voluptatibus aspernatur
+          minima, error delectus expedita, molestiae quam quos sunt aperiam,
+          dolor omnis harum aliquid necessitatibus. A, quae consequuntur
+          molestias quisquam neque nostrum pariatur illo cupiditate sit quidem
+          impedit eius laborum sed, voluptates voluptate eligendi blanditiis
+          quas nam corrupti officiis. Corrupti amet vel praesentium recusandae
+          voluptas vitae debitis, quam quaerat culpa cumque ex quo laboriosam!
+          Non omnis cum numquam quis, voluptatum maxime?
+        </p>
+      </div>
+      <div class="panels-item">
+        <h2>Donkey Kong</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          assumenda voluptates dicta eius eveniet cum et eligendi, ea
+          voluptatem, vitae unde! Nemo quas facere fuga possimus perferendis
+          blanditiis nihil assumenda. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Nam ipsa, temporibus harum repudiandae voluptate
+          mollitia. Maiores nam tempore iste ab error,
+        </p>
+      </div>
+      <div class="panels-item">
+        <h2>Pong</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          assumenda voluptates dicta eius eveniet cum et eligendi, ea
+          voluptatem, vitae unde! Nemo quas facere fuga possimus perferendis
+          blanditiis nihil assumenda. Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Dignissimos tempore soluta excepturi maiores illum,
+          eius, nisi a placeat amet fugit odit rem mollitia iste, perspiciatis
+          natus blanditiis. Dolores, nihil? Cumque provident nam natus ea
+          perferendis repellat debitis quam exercitationem, quis quae temporibus
+          voluptate? In placeat perferendis corrupti distinctio qui facilis
+          assumenda ab, mollitia eaque? Adipisci, sit. Error, quas itaque hic
+          cupiditate doloremque explicabo incidunt dolor suscipit odio ullam in
+          aut quam molestias sit reprehenderit molestiae accusamus corporis
+          pariatur quia ducimus doloribus? Dolore
+        </p>
+      </div>
+      <div class="panels-item">
+        <h2>Pacman</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          assumenda voluptates dicta eius eveniet cum et eligendi, ea
+          voluptatem, vitae unde! Nemo quas facere fuga possimus perferendis
+          blanditiis nihil assumenda.
+        </p>
+      </div>
+      <div class="panels-item">
+        <h2>Frooger</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          assumenda voluptates dicta eius eveniet cum et eligendi, ea
+          voluptatem, vitae unde! Nemo quas facere fuga possimus perferendis
+          blanditiis nihil assumenda.Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Deserunt assumenda voluptates dicta eius eveniet cum
+          et eligendi, ea voluptatem, vitae unde! Ne
+        </p>
+      </div>
+      <div class="panels-item">
+        <h2>Space Invaders</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          assumenda voluptates dicta eius eveniet cum et eligendi, ea
+          voluptatem, vitae unde! Nemo quas facere fuga possimus perferendis
+          blanditiis nihil assumenda.Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Deserunt assumenda voluptates dicta eius eveniet cum
+          et eligendi, ea voluptatem, vitae unde! Nemo quas facere fuga possimus
+          perferendis blanditiis nihil assumenda.Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Deserunt assumenda voluptates dictniti
+          magni sapiente, laboriosam impedit voluptates expedita rerum labore
+          quod! Aperiam!
+        </p>
+      </div>
+      <div class="panels-item">
+        <h2>Tetris</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          assumenda voluptates dicta eius eveniet cum et eligendi, ea
+          voluptatem, vitae unde! Nemo quas facere fuga possimus perferendis
+          blanditiis nihil assumenda.Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Deserunt assumenda voluptates dicta eius eveniet cum
+          et eligendi, ea voluptatem, vitae unde! Nemo quas facere fuga possimus
+          perferendis blanditiis nihil assumenda.Lorem ipsum dolor sit amet
+          consectetur ad
+        </p>
+      </div>
+      <div class="panels-item">
+        <h2>Galaga</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          assumenda voluptates dicta eius eveniet cum et eligendi, ea
+          voluptatem, vitae unde! Nemo quas facere fuga possimus perferendis
+          blanditiis nihil assumenda.Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Deserunt assumenda voluptates dicta eius eveniet cum
+          et eligendi, ea voluptatem, vitae unde! Nemo quas facere fuga possimus
+          perferendis blanditiis nihil assumenda.Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Deserunt assumenda voluptates dicta eius
+          eveniet cum et eligendi, ea voluptatem, vitae unde! Nemo quas facere
+          fuga possimus perferendis blanditiis nihil assumenda.Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Deserunt assumenda voluptates
+          dicta eius eveniet cum et eligendi, ea voluptatem, vitae unde! Nemo
+          quas facere fuga possimus perferendis blanditiis nihil assumenda.
+        </p>
+      </div>
+      <div class="panels-item">
+        <h2>Centipede</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          assumenda voluptates dicta eius eveniet cum et eligendi, ea
+          voluptatem, vitae unde! Nemo quas facere fuga possimus perferendis
+          blanditiis nihil assumenda.Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Deserunt assumenda voluptates dicta eius eveniet cum
+          et eligendi, ea voluptatem, vitae unde! Nemo quas facere fuga possimus
+          perferendis blanditiis nihil assumenda.Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Deserunt assumenda voluptates dicta eius
+          eveniet cum et eligendi, ea voluptatem, vitae unde! Nemo quas facere
+          fuga possimus perferendis blanditiis nihil assumenda.Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Deserunt assumenda voluptates
+          dicta eius eveniet cum et eligendi, ea voluptatem, vitae unde! Nemo
+          quas facere fuga possimus perferendis blanditiis nihil assumenda.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<! --Rules section  end -->
+
+<div class="line" id="galaga">
+  <img src="https://i.imgur.com/xgNNcHl.png" alt="" height="30" />
+  <img src="https://i.imgur.com/YZ1abFG.png" alt="" height="30" />
+</div>
+
+<! --Who section start -->
+<section id="news" class="news-section">
+  <h2>news</h2>
+  <div class="news-container">
+    <article class="news">
+      <figure class="news-imageContainer">
+        <img
+          class="news-image"
+          src="https://i.imgur.com/D284HV8.jpg"
+          width="500"
+          alt=""
+        />
+      </figure>
+      <div class="news-detail">
+        <h3 class="news-title">
+          Qomp Explores the World Behind the Pong Paddles
+        </h3>
+        <p class="news-description">
+          The Pong ball is perhaps the original videogame NPC, an unfortunate
+          observer in the epic battle between left paddle and right paddle. Now,
+          however, it's taking control in Qomp, a story about "the forgotten
+          world behind the paddle."
+        </p>
+        <a
+          class="news-url"
+          href="https://www.kotaku.co.uk/2020/07/28/qomp-explores-the-world-behind-the-pong-paddles"
+          target="_blank"
+        >
+          see more
+        </a>
+      </div>
+    </article>
+    <article class="news">
+      <figure class="news-imageContainer">
+        <img
+          class="news-image"
+          src="https://i.imgur.com/mj1WnQQ.jpg"
+          width="500"
+          alt=""
+        />
+      </figure>
+      <div class="news-detail">
+        <h3 class="news-title">
+          Mumbai Police is using this Space Invaders video game inspired meme to
+          send an important health message
+        </h3>
+        <p class="news-description">
+          Trust Mumbai Police to use the perfect blend of pop-culture and
+          scientific knowledge to send forth an essential health message.
+        </p>
+        <a
+          class="news-url"
+          href="https://www.hindustantimes.com/it-s-viral/mumbai-police-is-using-this-space-invaders-video-game-inspired-meme-to-send-an-important-health-message/story-Bp4bESR4FBwfowgd7GPPLO.html"
+          target="_blank"
+        >
+          see more
+        </a>
+      </div>
+    </article>
+    <article class="news">
+      <figure class="news-imageContainer">
+        <img
+          class="news-image"
+          src="https://i.imgur.com/Y68Fedq.jpg"
+          width="500"
+          alt=""
+        />
+      </figure>
+      <div class="news-detail">
+        <h3 class="news-title">Frogger in Toy Town Simple Mode Out Now</h3>
+        <p class="news-description">
+          Konami has announced that a new ‘Simple Mode’ is now available in the
+          Apple Arcade-exclusive title Frogger in Toy Town.
+        </p>
+        <a
+          class="news-url"
+          href="https://invisioncommunity.co.uk/frogger-in-toy-town-simple-mode-out-now/"
+          target="_blank"
+        >
+          see more
+        </a>
+      </div>
+    </article>
+    <article class="news">
+      <figure class="news-imageContainer">
+        <img
+          class="news-image"
+          src="https://i.imgur.com/8FvGtYn.jpg"
+          width="500"
+          alt=""
+        />
+      </figure>
+      <div class="news-detail">
+        <h3 class="news-title">
+          Namco Museum Archives Vols. 1 & 2 Review: Pac-Man, Galaga, and a Trip
+          Through NES History
+        </h3>
+        <p class="news-description">
+          Namco Museum Archives Vols. 1 and 2 are two of the best retro game
+          compilations released in recent years. Pac-Man, Galaga, and
+          Splatterhouse fans won't want to miss these re-releases.
+        </p>
+        <a
+          class="news-url"
+          href="https://www.denofgeek.com/games/namco-museum-archives-review-pac-man-galaga/"
+          target="_blank"
+        >
+          see more
+        </a>
+      </div>
+    </article>
+    <article class="news">
+      <figure class="news-imageContainer">
+        <img
+          class="news-image"
+          src="https://i.imgur.com/OQ0aWX8.png"
+          width="500"
+          alt=""
+        />
+      </figure>
+      <div class="news-detail">
+        <h3 class="news-title">
+          Celebrate 40 years of Pac-Man with the Gorillaz
+        </h3>
+        <p class="news-description">
+          Bandai Namco is celebrating Pac-Man’s 40th anniversary with a new
+          music video from the Gorillaz.
+        </p>
+        <a
+          class="news-url"
+          href="https://www.nag.co.za/2020/07/27/celebrate-40-years-of-pac-man-with-the-gorillaz/"
+          target="_blank"
+        >
+          see more
+        </a>
+      </div>
+    </article>
+    <article class="news">
+      <figure class="news-imageContainer">
+        <img
+          class="news-image"
+          src="https://i.imgur.com/uLqyoJB.png"
+          width="500"
+          alt=""
+        />
+      </figure>
+      <div class="news-detail">
+        <h3 class="news-title">
+          ARKANOID CLOCK IS EXACTLY WHAT IT SOUNDS LIKE
+        </h3>
+        <p class="news-description">
+          A clock can be a simple device that keeps you aware of the current
+          time, but it can also be so much more. It can express an aesthetic
+          ideal from yesteryear, or be a throwback to a popular cultural
+          touchstone. It can even be both, in the case of the brilliant
+          Arkaclock from [Victor Serrano].
+        </p>
+        <a
+          class="news-url"
+          href="https://hackaday.com/2020/02/21/arkanoid-clock-is-exactly-what-it-sounds-like/"
+          target="_blank"
+        >
+          see more
+        </a>
+      </div>
+    </article>
+    <article class="news">
+      <figure class="news-imageContainer">
+        <img
+          class="news-image"
+          src="https://i.imgur.com/0f0o1bY.jpg"
+          width="500"
+          alt=""
+        />
+      </figure>
+      <div class="news-detail">
+        <h3 class="news-title">
+          ‘Tetris Effect: Connected’: Will it be worth the Holiday purchase?
+        </h3>
+        <p class="news-description">
+          With all the great games slated for release this holiday alongside the
+          next-gen consoles, can Tetris Effect: Connected compete?
+        </p>
+        <a
+          class="news-url"
+          href="https://micky.com.au/tetris-effect-connected-will-it-be-worth-the-holiday-purchase/"
+          target="_blank"
+        >
+          see more
+        </a>
+      </div>
+    </article>
+    <article class="news">
+      <figure class="news-imageContainer">
+        <img
+          class="news-image"
+          src="https://i.imgur.com/iEETYcP.png"
+          width="500"
+          alt=""
+        />
+      </figure>
+      <div class="news-detail">
+        <h3 class="news-title">
+          Donkey Kong Country leidt de Nintendo Switch Online SNES en NES games
+          van juli 2020
+        </h3>
+        <p class="news-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in diam
+          ipsum. Nam a nibh nec leo pretium aliquet. Etiam.
+        </p>
+        <a
+          class="news-url"
+          href="https://nl.ign.com/donkey-kong-country/124093/news/donkey-kong-country-leidt-de-nintendo-switch-online-snes-en-nes-games-van-juli-2020"
+          target="_blank"
+        >
+          see more
+        </a>
+      </div>
+    </article>
+    <article class="news">
+      <figure class="news-imageContainer">
+        <img
+          class="news-image"
+          src="https://i.imgur.com/z4cVo2p.jpg"
+          width="500"
+          alt=""
+        />
+      </figure>
+      <div class="news-detail">
+        <h3 class="news-title">
+          Centipede, Minecraft Among Games Inducted Into World Video Game Hall
+          Of Fame
+        </h3>
+        <p class="news-description">
+          The World Video Game Hall of Fame inducted Bejeweled, Centipede,
+          King’s Quest and Minecraft in a virtual ceremony Thursday that
+          recognized their influence on the industry and the gamers who have
+          spent tens of billions of hours playing them.
+        </p>
+        <a
+          class="news-url"
+          href="https://www.youtube.com/watch?v=BIS7cWGgJg0"
+          target="_blank"
+        >
+          see more
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+<! --Who section end -->
+
+<! --   Footer -->
+<footer class="footer">
+  <div class="contact">
+    <h3>We create something together?</h3>
+    <a href="mailto:elonlegan@gmail.com" class="mail-link">Send an email</a>
+  </div>
+  <div class="social">
+    <a
+      href="https://twitter.com/elonlegan"
+      class="social-link twitter"
+      target="_blank"
+    ></a>
+    <a
+      href="https://facebook.com/elonlegan"
+      class="social-link facebook"
+      target="_blank"
+    ></a>
+    <a
+      href="https://github.com/elonlegan"
+      class="social-link github"
+      target="_blank"
+    ></a>
+    <a
+      href="https://instagram.com/elonlegan"
+      class="social-link instagram"
+      target="_blank"
+    ></a>
+  </div>
+</footer>
+<! --   Footer -->

@@ -1,3 +1,5 @@
+@import "./normalize.scss";
+@import "./responsive.scss";
 /*--------------------- VARIABLES --------*/
 :root {
   --fondo-oscuro: #1d2029;
@@ -426,16 +428,16 @@ figure {
 }
 
 .social-link.twitter {
-  background-image: url("../images/twitter.svg");
+  background-image: url("assets/images/twitter.svg");
 }
 .social-link.facebook {
-  background-image: url("../images/facebook.svg");
+  background-image: url("assets/images/facebook.svg");
 }
 .social-link.github {
-  background-image: url("../images/github.svg");
+  background-image: url("assets/images/github.svg");
 }
 .social-link.instagram {
-  background-image: url("../images/instagram.svg");
+  background-image: url("assets/images/instagram.svg");
 }
 
 /*--------------------- FOOTER --------*/
