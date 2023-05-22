@@ -3,33 +3,7 @@
   <h2>rules and instructions</h2>
   <div class="tabs-container">
     <ul class="tabs" id="tabs">
-      <div class="border-gradient active" id="arkanoid">
-        <li class="tabs-item active" id="arkanoid"></li>
-      </div>
-      <div class="border-gradient" id="kong">
-        <li class="tabs-item" id="kong"></li>
-      </div>
-      <div class="border-gradient" id="pong">
-        <li class="tabs-item" id="pong"></li>
-      </div>
-      <div class="border-gradient" id="pacman">
-        <li class="tabs-item" id="pacman"></li>
-      </div>
-      <div class="border-gradient" id="frogger">
-        <li class="tabs-item" id="frogger"></li>
-      </div>
-      <div class="border-gradient" id="space">
-        <li class="tabs-item" id="space"></li>
-      </div>
-      <div class="border-gradient" id="tetris">
-        <li class="tabs-item" id="tetris"></li>
-      </div>
-      <div class="border-gradient" id="galaga">
-        <li class="tabs-item" id="galaga"></li>
-      </div>
-      <div class="border-gradient" id="centipede">
-        <li class="tabs-item" id="centipede"></li>
-      </div>
+      <app-button-tab [game]="game" *ngFor="let game of games"></app-button-tab>
     </ul>
     <div class="pannels">
       <div class="panels-item active">
