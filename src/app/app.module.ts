@@ -11,6 +11,8 @@ import { NewsComponent } from './components/news/news.component';
 import { DividerComponent } from './components/divider/divider.component';
 import { ButtonBadgeComponent } from './components/button-badge/button-badge.component';
 import { ButtonTabComponent } from './components/button-tab/button-tab.component';
+import { TitleComponent } from './components/title/title.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { ButtonTabComponent } from './components/button-tab/button-tab.component
     DividerComponent,
     ButtonBadgeComponent,
     ButtonTabComponent,
+    TitleComponent,
+    HomeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
