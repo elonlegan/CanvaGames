@@ -271,6 +271,7 @@ header nav ul li {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .border-gradient {
   width: 100%;

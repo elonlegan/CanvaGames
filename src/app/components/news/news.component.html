@@ -2,12 +2,15 @@
 <section id="news" class="news-section">
   <div class="container--size">
     <app-title title="news"></app-title>
-    <div class="news-container">
+    <div class="news-container" *ngIf="news.length; else loader">
       <app-news-card
         [article]="article"
         *ngFor="let article of news"
       ></app-news-card>
     </div>
+    <ng-template #loader>
+      <app-loader></app-loader>
+    </ng-template>
   </div>
 </section>
 <! --Who section end -->

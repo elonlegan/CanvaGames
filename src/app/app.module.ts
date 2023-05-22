@@ -15,6 +15,7 @@ import { TitleComponent } from './components/title/title.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NewsCardComponent } from './components/news-card/news-card.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { NewsCardComponent } from './components/news-card/news-card.component';
     TitleComponent,
     HomeComponent,
     NewsCardComponent,
+    LoaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

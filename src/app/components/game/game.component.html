@@ -7,22 +7,27 @@
         *ngFor="let game of games"
       ></app-button-badge>
     </div>
-    <img
-      src="https://media.giphy.com/media/LmxoljK1BQ3pJH62v4/giphy.gif"
-      alt=""
-      class="canvas"
-      id="gif"
-    />
-    <img
-      src="https://media.giphy.com/media/JrdZsJYv3JGjXAot8F/giphy.gif"
-      alt=""
-      class="canvas none"
-      id="gifError"
-    />
-    <div class="canvas-container">
-      <canvas class="canvas none" width="750" height="375" id="canvas">
-      </canvas>
+
+    <div class="canvas-container" *ngIf="gameSelected?.available">
+      <canvas class="canvas" width="750" height="375" id="canvas"> </canvas>
     </div>
+
+    <ng-container *ngIf="!gameSelected">
+      <img
+        src="https://media.giphy.com/media/LmxoljK1BQ3pJH62v4/giphy.gif"
+        alt=""
+        class="canvas"
+        id="gif"
+      />
+    </ng-container>
+    <ng-container *ngIf="gameSelected && !gameSelected?.available">
+      <img
+        src="https://media.giphy.com/media/JrdZsJYv3JGjXAot8F/giphy.gif"
+        alt=""
+        class="canvas"
+        id="gifError"
+      />
+    </ng-container>
   </div>
 </section>
 <! --Main section end -->

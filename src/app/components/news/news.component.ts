@@ -19,7 +19,6 @@ export class NewsComponent {
       .pipe(first())
       .subscribe((news: any) => {
         this.news = news.articles;
-        console.log(this.news);
         this.loading = false;
       });
   }

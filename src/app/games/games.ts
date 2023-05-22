@@ -32,6 +32,7 @@ export const games = [
     <p>Earn points for each brick you destroy and bonus points for completing a level quickly. The score increases as you progress through the levels.</p>
 
     <p>Enjoy playing Arkanoid and demolish those bricks!</p>`,
+    available: false,
   },
   {
     title: 'Donkey Kong',
@@ -56,6 +57,7 @@ export const games = [
     <p>Earn points by collecting items, defeating enemies, and reaching Pauline. The score increases as you progress through the levels.</p>
 
     <p>Good luck in saving Pauline from Donkey Kong!</p>`,
+    available: false,
   },
   {
     title: 'Pong',
@@ -80,6 +82,7 @@ export const games = [
     <p>Earn a point when the opponent fails to return the ball. The first player to reach the predetermined score wins the game.</p>
 
     <p>Enjoy playing Pong!</p>`,
+    available: true,
   },
   {
     title: 'Pacman',
@@ -104,6 +107,7 @@ export const games = [
     <p>Earn points by eating pellets and fruits, as well as by eating vulnerable ghosts. The score increases as you progress through the levels.</p>
 
     <p>Enjoy playing Pac-Man!</p>`,
+    available: false,
   },
   {
     title: 'Frogger',
@@ -128,6 +132,7 @@ export const games = [
     <p>Earn points by successfully guiding the frog across the road and river. The score increases as you progress through the levels.</p>
 
     <p>Good luck in safely guiding your frog home!</p>`,
+    available: false,
   },
   {
     title: 'Space Invaders',
@@ -152,6 +157,7 @@ export const games = [
     <p>Earn points by shooting down the invading aliens. The score increases as you destroy more enemies.</p>
 
     <p>Enjoy playing Space Invaders and defend the Earth!</p>`,
+    available: false,
   },
   {
     title: 'Tetris',
@@ -177,6 +183,7 @@ export const games = [
     <p>Earn points by clearing rows. The score increases as you complete more rows simultaneously.</p>
 
     <p>Enjoy playing Tetris and stack those blocks!</p>`,
+    available: false,
   },
   {
     title: 'Galaga',
@@ -201,6 +208,7 @@ export const games = [
     <p>Earn points by shooting down enemy ships. The score increases as you destroy more enemies.</p>
 
     <p>Enjoy playing Galaga and defend the galaxy!</p>`,
+    available: false,
   },
   {
     title: 'Centipede',
@@ -226,5 +234,6 @@ export const games = [
     <p>Earn points by shooting down the centipede and other enemies. The score increases as you destroy more enemies.</p>
 
     <p>Enjoy playing Centipede and eliminate the insect invasion!</p>`,
+    available: false,
   },
 ];
