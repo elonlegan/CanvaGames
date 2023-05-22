@@ -14,6 +14,40 @@
   --fuente-primaria: "Rubik", sans-serif;
 }
 /*--------------------- VARIABLES --------*/
+@mixin media($breakpoint) {
+  @if $breakpoint == mobile-m {
+    @media only screen and (min-width: 375px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media only screen and (min-width: 767px) {
+      @content;
+    }
+  } @else if $breakpoint == desktop-s {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  } @else if $breakpoint == desktop-m {
+    @media only screen and (min-width: 1023px) {
+      @content;
+    }
+  } @else if $breakpoint == desktop-l {
+    @media only screen and (min-width: 1480px) {
+      @content;
+    }
+  } @else if $breakpoint == desktop-xl {
+    @media only screen and (min-width: 1780px) {
+      @content;
+    }
+  } @else if $breakpoint == mobile-only {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+}
+
 /*--------------------- GLOBAL START --------*/
 body {
   font-family: var(--fuente-primaria);
@@ -35,6 +69,37 @@ a {
 a:hover {
   opacity: 0.7;
 }
+
+// @import "components/containers";
+%container {
+  flex: 1;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+  grid-template-areas: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+  color: inherit;
+}
+
+.container--link {
+  @extend %container;
+}
+
+.container--size {
+  @extend %container;
+  margin: 0 15px;
+  max-width: 1300px;
+  @include media(desktop-m) {
+    margin: 0 auto;
+  }
+}
+// @import "components/containers";
 
 /*--------------------- GLOBAL END --------*/
 
@@ -300,9 +365,10 @@ figure {
 }
 
 .news-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  padding-bottom: 40px;
 }
 
 .news-list-title {
@@ -310,9 +376,6 @@ figure {
 }
 
 .news {
-  margin: 1%;
-  width: 48%;
-  max-width: 480px;
   border-radius: 10px;
   overflow: hidden;
   flex-shrink: 0;
@@ -344,6 +407,12 @@ figure {
   padding: 5px 20px;
   border-radius: 5px;
   color: #bd9aff;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+.mail-link {
+  margin: 0;
 }
 
 /*--------------------- NEWS SECTION --------*/

@@ -13,6 +13,8 @@ import { ButtonBadgeComponent } from './components/button-badge/button-badge.com
 import { ButtonTabComponent } from './components/button-tab/button-tab.component';
 import { TitleComponent } from './components/title/title.component';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NewsCardComponent } from './components/news-card/news-card.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +29,9 @@ import { HomeComponent } from './home/home.component';
     ButtonTabComponent,
     TitleComponent,
     HomeComponent,
+    NewsCardComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

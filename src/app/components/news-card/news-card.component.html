@@ -1,0 +1,17 @@
+<article class="news">
+  <figure class="news-imageContainer">
+    <img
+      class="news-image"
+      [src]="article.urlToImage"
+      width="500"
+      [alt]="article.title + 'image'"
+    />
+  </figure>
+  <div class="news-detail">
+    <h3 class="news-title">{{ article.title }}</h3>
+    <p class="news-description">
+      {{ article.description }}
+    </p>
+    <a class="news-url" [href]="article.url" target="_blank"> see more </a>
+  </div>
+</article>
