@@ -1,0 +1,38 @@
+<! --Main section start -->
+<section class="main">
+  <div class="main-container">
+    <div class="badges">
+      <app-button-badge
+        [game]="game"
+        *ngFor="let game of games"
+      ></app-button-badge>
+    </div>
+
+    <canvas
+      class="canvas"
+      [class.none]="!gameSelected?.available"
+      width="750"
+      height="375"
+      id="canvas"
+    >
+    </canvas>
+
+    <ng-container *ngIf="!gameSelected">
+      <img
+        src="https://media.giphy.com/media/LmxoljK1BQ3pJH62v4/giphy.gif"
+        alt=""
+        class="canvas"
+        id="gif"
+      />
+    </ng-container>
+    <ng-container *ngIf="gameSelected && !gameSelected?.available">
+      <img
+        src="https://media.giphy.com/media/JrdZsJYv3JGjXAot8F/giphy.gif"
+        alt=""
+        class="canvas"
+        id="gifError"
+      />
+    </ng-container>
+  </div>
+</section>
+<! --Main section end -->

@@ -1,0 +1,12 @@
+<div
+  class="contain-btn-badge"
+  [ngStyle]="{
+    backgroundColor: game.backgroundColor,
+    borderColor: game.borderColor,
+    boxShadow: '0 3.8px 0 ' + game.shadowColor
+  }"
+  [routerLink]="['/', game.slug]"
+  routerLinkActive="active"
+>
+  <img class="badge" [src]="game.img" [alt]="'badge ' + game.title" />
+</div>

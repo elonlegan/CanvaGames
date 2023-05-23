@@ -1,0 +1,33 @@
+<! --Rules section start -->
+<section id="rules" class="rules">
+  <div class="container--size">
+    <app-title title="rules and instructions"></app-title>
+    <div class="tabs-container">
+      <ul class="tabs" id="tabs">
+        <app-button-tab
+          [game]="game"
+          *ngFor="let game of games"
+        ></app-button-tab>
+      </ul>
+      <div class="pannel">
+        <div class="pannel-item">
+          <h2 class="pannel-title">
+            <img
+              [src]="gameSelected.img"
+              [alt]="gameSelected.title + ' logo'"
+            />
+            {{ gameSelected.title }}
+            <img
+              [src]="gameSelected.img"
+              [alt]="gameSelected.title + ' logo'"
+            />
+          </h2>
+
+          <div [innerHTML]="gameSelected.rules" class="pannel-content"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<! --Rules section  end -->

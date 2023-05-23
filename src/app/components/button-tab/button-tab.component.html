@@ -1,0 +1,15 @@
+<div
+  class="border-gradient"
+  [routerLink]="['/', game.slug]"
+  routerLinkActive="active"
+  [id]="game.slug"
+>
+  <li
+    class="tabs-item"
+    [routerLink]="['/', game.slug]"
+    routerLinkActive="active"
+    [ngStyle]="{
+      backgroundImage: 'url(' + game.img + ')',
+    }"
+  ></li>
+</div>
