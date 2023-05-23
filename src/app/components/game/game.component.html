@@ -8,9 +8,14 @@
       ></app-button-badge>
     </div>
 
-    <div class="canvas-container" *ngIf="gameSelected?.available">
-      <canvas class="canvas" width="750" height="375" id="canvas"> </canvas>
-    </div>
+    <canvas
+      class="canvas"
+      [class.none]="!gameSelected?.available"
+      width="750"
+      height="375"
+      id="canvas"
+    >
+    </canvas>
 
     <ng-container *ngIf="!gameSelected">
       <img
